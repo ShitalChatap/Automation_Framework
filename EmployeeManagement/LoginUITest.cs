@@ -10,7 +10,7 @@ namespace EmployeeManagement
         public void BeforeMethod()
         {
             //browser launch
-            IWebDriver driver = new ChromeDriver();
+            driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             driver.Url = "https://opensource-demo.orangehrmlive.com/";
@@ -27,7 +27,7 @@ namespace EmployeeManagement
             
             
             string actualTitle= driver.Title;
-            Assert.That(actualTitle,Is.EqualTo("orangeHRM"));
+            Assert.That(actualTitle,Is.EqualTo("OrangeHRM"));
            
         }
 
@@ -36,9 +36,9 @@ namespace EmployeeManagement
         {
            
             string actualUsernamePlaceholder=driver.FindElement(By.Name("username")).GetAttribute("placeholder");
-            Assert.That(actualUsernamePlaceholder, Is.EqualTo("username"));
+            Assert.That(actualUsernamePlaceholder, Is.EqualTo("Username"));
             string actualPasswordPlaceholder = driver.FindElement(By.Name("password")).GetAttribute("placeholder");
-            Assert.That(actualPasswordPlaceholder,Is.EqualTo("password"));
+            Assert.That(actualPasswordPlaceholder,Is.EqualTo("Password"));
 
         }
     }
