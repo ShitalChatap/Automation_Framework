@@ -16,6 +16,7 @@ namespace EmployeeManagement
             driver.Url = "https://opensource-demo.orangehrmlive.com/";
 
         }
+        [TearDown]
         public void AfterMethod()
         {
             //close browser
