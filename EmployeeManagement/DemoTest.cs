@@ -25,7 +25,7 @@ namespace EmployeeManagement
             object[] allDataSet = new object[3];//number of test case
             allDataSet[0] = dataSet1;
             allDataSet[1] = dataSet2;
-            allDataSet[3] = dataSet3;
+            allDataSet[2] = dataSet3;
             //allDataSet[2] = dataSet3;
             return allDataSet;
 
