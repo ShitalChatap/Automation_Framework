@@ -41,6 +41,8 @@ namespace EmployeeManagement
             string actualPasswordPlaceholder = driver.FindElement(By.Name("password")).GetAttribute("placeholder");
             Assert.That(actualPasswordPlaceholder,Is.EqualTo("Password"));
 
+
+
         }
     }
 }
