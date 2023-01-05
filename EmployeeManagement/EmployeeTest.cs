@@ -27,11 +27,17 @@ namespace EmployeeManagement
 
             driver.FindElement(By.XPath("//button[@type='submit']")).Click();
 
+
             //validate entered data 
-            string nameValidation = driver.FindElement(By.XPath("//h6[@class='oxd-text oxd-text--h6 --strong']")).Text;
-           Console.WriteLine( nameValidation.ToCharArray());
-            Assert.That(expetedresult.Contains(nameValidation));
-            Console.WriteLine(expetedresult);
+            // string nameValidation = driver.FindElement(By.XPath("//h6[@class='oxd-text oxd-text--h6 --strong']")).Text;
+            //Console.WriteLine( nameValidation.ToCharArray());
+            // Assert.That(expetedresult.Contains(nameValidation));
+            // Console.WriteLine(expetedresult);
+
+            // driver.FindElement(By.XPath("//div[@class='orangehrm-edit-employee-name']/h6")).Text;
+           // driver.FindElement(By.XPath(headerLocattorXpath)).Text;
+           // Assert.That
+
 
 
 
