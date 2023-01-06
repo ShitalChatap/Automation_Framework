@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,8 +48,6 @@ namespace EmployeeManagement.Utilities
             dataset1[2] = "john";
             dataset1[3] = "w";
             dataset1[4] = "weak";
-            
-          //  dataset1[5] = "//h6[text()='john  weak' and @class='oxd-text oxd-text--h6 --strong']";
             dataset1[5] = "john weak";
 
             string[] dataset2 = new string[6];
@@ -57,8 +56,6 @@ namespace EmployeeManagement.Utilities
             dataset2[2] = "saul";
             dataset2[3] = "g";
             dataset2[4] = "goodman";
-           
-           // dataset2[5] = "//h6[text()='saul goodman' and @class='oxd-text oxd-text--h6 --strong']";
             dataset2[5] = "saul goodman";
 
             object[] allDataSets= new object[2];
@@ -69,7 +66,14 @@ namespace EmployeeManagement.Utilities
 
 
         }
-
+        public static object[] InvalidLoginData2()
+        {
+            object[] data = ExcelUtils.GetSheetIntObjectArray(@"C:\Users\shitalc\Desktop\C#_2022\AutomationFramework\EmployeeManagement\TestData\Orange_data.xlsx", "InvalidLoginTest");
+            return data;
+        }
         
+
+
+
     }
 }

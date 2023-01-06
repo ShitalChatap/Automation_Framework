@@ -27,16 +27,12 @@ namespace EmployeeManagement
 
             driver.FindElement(By.XPath("//button[@type='submit']")).Click();
 
+            string headerLocatorXpath = "h6[contains(normalize-space(),@@@@@')]";
+            headerLocatorXpath = headerLocatorXpath.Replace("@@@@@", "peter");
 
-            //validate entered data 
-            // string nameValidation = driver.FindElement(By.XPath("//h6[@class='oxd-text oxd-text--h6 --strong']")).Text;
-            //Console.WriteLine( nameValidation.ToCharArray());
-            // Assert.That(expetedresult.Contains(nameValidation));
-            // Console.WriteLine(expetedresult);
-
-            // driver.FindElement(By.XPath("//div[@class='orangehrm-edit-employee-name']/h6")).Text;
-           // driver.FindElement(By.XPath(headerLocattorXpath)).Text;
-           // Assert.That
+            string actualEmpRecord=driver.FindElement(By.XPath(headerLocatorXpath)).Text;
+            Assert.That(actualEmpRecord, Is.EqualTo("john wick"));
+           
 
 
 
