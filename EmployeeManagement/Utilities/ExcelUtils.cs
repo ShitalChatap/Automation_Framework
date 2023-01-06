@@ -19,10 +19,10 @@ namespace EmployeeManagement.Utilities
                 IXLRange range = sheet.RangeUsed();
                 int rowCount = range.RowCount();
                 int columnCount = range.ColumnCount();
-                object[] allData = new object[2];
+                object[] allData = new object[rowCount];
                 for (int r = 2; r <= rowCount; r++)
                 {
-                    string[] arr = new string[3];
+                    string[] arr = new string[columnCount];
                     for (int c = 1; c <= columnCount; c++)
                     {
                         string value = range.Cell(r, c).GetString();

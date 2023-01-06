@@ -71,7 +71,12 @@ namespace EmployeeManagement.Utilities
             object[] data = ExcelUtils.GetSheetIntObjectArray(@"C:\Users\shitalc\Desktop\C#_2022\AutomationFramework\EmployeeManagement\TestData\Orange_data.xlsx", "InvalidLoginTest");
             return data;
         }
-        
+        public static object[] AddEmployeeTestData1()
+        {
+            object[] data = ExcelUtils.GetSheetIntObjectArray(@"C:\Users\shitalc\Desktop\C#_2022\AutomationFramework\EmployeeManagement\TestData\Orange_data.xlsx", "AddEmployeeTest");
+            return data;
+        }
+
 
 
 

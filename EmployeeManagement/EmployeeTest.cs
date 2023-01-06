@@ -11,7 +11,7 @@ namespace EmployeeManagement
 {
     public class EmployeeTest : AutomationWrapper
     {
-        [Test, TestCaseSource(typeof(DataSource), (nameof(DataSource.AddEmployeeTestData)))]
+        [Test, TestCaseSource(typeof(DataSource), (nameof(DataSource.AddEmployeeTestData1)))]
         public void AddEmployeeTest(string userName, string password, string firstname, string middlename, string lastname,  string expetedresult)
         {
             driver.FindElement(By.Name("username")).SendKeys(userName);
