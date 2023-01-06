@@ -16,7 +16,7 @@ namespace EmployeeManagement.Base
         [SetUp]
         public void BeforeMethod()
         {
-            string browserName = "edge";
+            string browserName = "chro";
             if (browserName.ToLower().Equals("edge"))
             {
                 driver = new EdgeDriver();

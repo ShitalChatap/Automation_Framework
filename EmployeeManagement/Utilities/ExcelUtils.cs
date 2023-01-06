@@ -26,7 +26,6 @@ namespace EmployeeManagement.Utilities
                     for (int c = 1; c <= columnCount; c++)
                     {
                         string value = range.Cell(r, c).GetString();
-                        Console.WriteLine(value);
                         arr[c - 1] = value;
                     }
 
